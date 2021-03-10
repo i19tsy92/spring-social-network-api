@@ -1,0 +1,10 @@
+server:
+  port: 8080
+spring:
+  application:
+    name: '@name@'
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://${REGISTRY_SERVICE_HOST:localhost}:${RGISTRY_SERVICE_PORT:8761}/eureka
+    enabled: false
